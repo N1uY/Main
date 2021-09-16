@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1631693727060" analysisTimestamp="1631693729378" release="">
+  <Project projectName="">
+    <Jar>/home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main//target</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="6cc5b6e7b738c87c87437459dac4aabe" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Main.run(): new java.io.PrintWriter(OutputStream)</LongMessage>
+    <Class classname="Main" primary="true">
+      <SourceLine classname="Main" start="16" end="101" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 16-101]</Message>
+      </SourceLine>
+      <Message>In class Main</Message>
+    </Class>
+    <Method classname="Main" name="run" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Main" start="94" end="98" startBytecode="0" endBytecode="105" sourcefile="Main.java" sourcepath="Main.java"/>
+      <Message>In method Main.run()</Message>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter"/>
+      <Message>Called method new java.io.PrintWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="Main" primary="true" start="94" end="94" startBytecode="23" endBytecode="23" sourcefile="Main.java" sourcepath="Main.java">
+      <Message>At Main.java:[line 94]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" instanceHash="6e0252e08091efe5f9818505dbc81c42" instanceOccurrenceNum="0" instanceOccurrenceMax="2" cweid="476">
+    <ShortMessage>Null pointer dereference</ShortMessage>
+    <LongMessage>Null pointer dereference of a in Main.solve()</LongMessage>
+    <Class classname="Main" primary="true">
+      <SourceLine classname="Main" start="16" end="101" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 16-101]</Message>
+      </SourceLine>
+      <Message>In class Main</Message>
+    </Class>
+    <Method classname="Main" name="solve" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Main" start="21" end="62" startBytecode="0" endBytecode="1209" sourcefile="Main.java" sourcepath="Main.java"/>
+      <Message>In method Main.solve()</Message>
+    </Method>
+    <LocalVariable name="a" register="4" pc="44" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from a</Message>
+    </LocalVariable>
+    <SourceLine classname="Main" primary="true" start="24" end="24" startBytecode="47" endBytecode="47" sourcefile="Main.java" sourcepath="Main.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at Main.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" instanceHash="6e0252e08091efe5f9818505dbc81c42" instanceOccurrenceNum="1" instanceOccurrenceMax="2" cweid="476">
+    <ShortMessage>Null pointer dereference</ShortMessage>
+    <LongMessage>Null pointer dereference of a in Main.solve()</LongMessage>
+    <Class classname="Main" primary="true">
+      <SourceLine classname="Main" start="16" end="101" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 16-101]</Message>
+      </SourceLine>
+      <Message>In class Main</Message>
+    </Class>
+    <Method classname="Main" name="solve" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Main" start="21" end="62" startBytecode="0" endBytecode="1209" sourcefile="Main.java" sourcepath="Main.java"/>
+      <Message>In method Main.solve()</Message>
+    </Method>
+    <LocalVariable name="a" register="4" pc="96" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from a</Message>
+    </LocalVariable>
+    <SourceLine classname="Main" primary="true" start="29" end="29" startBytecode="98" endBytecode="98" sourcefile="Main.java" sourcepath="Main.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at Main.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" instanceHash="6e0252e08091efe5f9818505dbc81c42" instanceOccurrenceNum="2" instanceOccurrenceMax="2" cweid="476">
+    <ShortMessage>Null pointer dereference</ShortMessage>
+    <LongMessage>Null pointer dereference of a in Main.solve()</LongMessage>
+    <Class classname="Main" primary="true">
+      <SourceLine classname="Main" start="16" end="101" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 16-101]</Message>
+      </SourceLine>
+      <Message>In class Main</Message>
+    </Class>
+    <Method classname="Main" name="solve" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Main" start="21" end="62" startBytecode="0" endBytecode="1209" sourcefile="Main.java" sourcepath="Main.java"/>
+      <Message>In method Main.solve()</Message>
+    </Method>
+    <LocalVariable name="a" register="4" pc="113" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from a</Message>
+    </LocalVariable>
+    <SourceLine classname="Main" primary="true" start="31" end="31" startBytecode="115" endBytecode="115" sourcefile="Main.java" sourcepath="Main.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at Main.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="2b93ba87ce8f61fd35da97ff23f87abf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in new Main$FastScanner(Main, InputStream): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="Main$FastScanner" primary="true">
+      <SourceLine classname="Main$FastScanner" start="66" end="90" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 66-90]</Message>
+      </SourceLine>
+      <Message>In class Main$FastScanner</Message>
+    </Class>
+    <Method classname="Main$FastScanner" name="&lt;init&gt;" signature="(LMain;Ljava/io/InputStream;)V" isStatic="false" primary="true">
+      <SourceLine classname="Main$FastScanner" start="66" end="68" startBytecode="0" endBytecode="98" sourcefile="Main.java" sourcepath="Main.java"/>
+      <Message>In method new Main$FastScanner(Main, InputStream)</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="Main$FastScanner" primary="true" start="67" end="67" startBytecode="19" endBytecode="19" sourcefile="Main.java" sourcepath="Main.java">
+      <Message>At Main.java:[line 67]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" instanceHash="42a9a249670855ab7689eca7431171b6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Should be a static inner class</ShortMessage>
+    <LongMessage>Should Main$FastScanner be a _static_ inner class?</LongMessage>
+    <Class classname="Main$FastScanner" primary="true">
+      <SourceLine classname="Main$FastScanner" start="66" end="90" sourcefile="Main.java" sourcepath="Main.java">
+        <Message>At Main.java:[lines 66-90]</Message>
+      </SourceLine>
+      <Message>In class Main$FastScanner</Message>
+    </Class>
+    <SourceLine classname="Main$FastScanner" start="66" end="90" sourcefile="Main.java" sourcepath="Main.java" synthetic="true">
+      <Message>At Main.java:[lines 66-90]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="NP_ALWAYS_NULL" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> A null pointer is dereferenced here.&nbsp; This will lead to a
+<code>NullPointerException</code> when the code is executed.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SIC_INNER_SHOULD_BE_STATIC" abbrev="SIC" category="PERFORMANCE">
+    <ShortDescription>Should be a static inner class</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+   made static.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="SIC">
+    <Description>Inner class could be made static</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="14">
+    <MissingClass>java.io.BufferedReader</MissingClass>
+    <MissingClass>java.io.InputStreamReader</MissingClass>
+    <MissingClass>java.io.PrintWriter</MissingClass>
+    <MissingClass>java.lang.Double</MissingClass>
+    <MissingClass>java.lang.Integer</MissingClass>
+    <MissingClass>java.lang.Long</MissingClass>
+    <MissingClass>java.lang.Math</MissingClass>
+    <MissingClass>java.lang.Object</MissingClass>
+    <MissingClass>java.lang.String</MissingClass>
+    <MissingClass>java.util.ArrayList</MissingClass>
+    <MissingClass>java.util.Arrays</MissingClass>
+    <MissingClass>java.util.Collections</MissingClass>
+    <MissingClass>java.util.Iterator</MissingClass>
+    <MissingClass>java.util.StringTokenizer</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Wed, 15 Sep 2021 08:15:27 +0000" total_classes="2" referenced_classes="2" total_bugs="6" total_size="77" num_packages="1" java_version="11.0.7" vm_version="11.0.7+8-LTS" cpu_seconds="2.12" clock_seconds="1.71" peak_mbytes="96.39" alloc_mbytes="768.00" gc_seconds="0.01" priority_2="1" priority_1="5">
+    <FileStats path="Main.java" bugCount="6" size="77" bugHash="2c2876506d13010c46e0b556b7ac2cf8"/>
+    <PackageStats package="" total_bugs="6" total_types="2" total_size="77" priority_2="1" priority_1="5">
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="53" bugs="4" priority_1="4"/>
+      <ClassStats class="Main$FastScanner" sourceFile="Main.java" interface="false" size="24" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="73" invocations="12" avgMicrosecondsPerInvocation="6165" maxMicrosecondsPerInvocation="31077" standardDeviationMircosecondsPerInvocation="9554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="65" invocations="12" avgMicrosecondsPerInvocation="5458" maxMicrosecondsPerInvocation="54213" standardDeviationMircosecondsPerInvocation="14748"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="64" invocations="151" avgMicrosecondsPerInvocation="429" maxMicrosecondsPerInvocation="42680" standardDeviationMircosecondsPerInvocation="3724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="64" invocations="12" avgMicrosecondsPerInvocation="5338" maxMicrosecondsPerInvocation="22038" standardDeviationMircosecondsPerInvocation="6080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="12" avgMicrosecondsPerInvocation="5084" maxMicrosecondsPerInvocation="30605" standardDeviationMircosecondsPerInvocation="9789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="53" invocations="12" avgMicrosecondsPerInvocation="4483" maxMicrosecondsPerInvocation="39436" standardDeviationMircosecondsPerInvocation="10615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="40" invocations="14" avgMicrosecondsPerInvocation="2866" maxMicrosecondsPerInvocation="21061" standardDeviationMircosecondsPerInvocation="5999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="33" invocations="2" avgMicrosecondsPerInvocation="16890" maxMicrosecondsPerInvocation="27345" standardDeviationMircosecondsPerInvocation="10455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="30" invocations="12" avgMicrosecondsPerInvocation="2511" maxMicrosecondsPerInvocation="18555" standardDeviationMircosecondsPerInvocation="5114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="29" invocations="12" avgMicrosecondsPerInvocation="2484" maxMicrosecondsPerInvocation="21008" standardDeviationMircosecondsPerInvocation="5806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="28" invocations="12" avgMicrosecondsPerInvocation="2340" maxMicrosecondsPerInvocation="15841" standardDeviationMircosecondsPerInvocation="4453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="25" invocations="2" avgMicrosecondsPerInvocation="12742" maxMicrosecondsPerInvocation="24854" standardDeviationMircosecondsPerInvocation="12112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="22" invocations="2" avgMicrosecondsPerInvocation="11274" maxMicrosecondsPerInvocation="15955" standardDeviationMircosecondsPerInvocation="4681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="154" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="4055" standardDeviationMircosecondsPerInvocation="452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="18" invocations="18" avgMicrosecondsPerInvocation="1004" maxMicrosecondsPerInvocation="17267" standardDeviationMircosecondsPerInvocation="3947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="18" invocations="2" avgMicrosecondsPerInvocation="9027" maxMicrosecondsPerInvocation="17538" standardDeviationMircosecondsPerInvocation="8511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="14" invocations="2" avgMicrosecondsPerInvocation="7366" maxMicrosecondsPerInvocation="10384" standardDeviationMircosecondsPerInvocation="3017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="14" invocations="12" avgMicrosecondsPerInvocation="1211" maxMicrosecondsPerInvocation="11632" standardDeviationMircosecondsPerInvocation="3164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="11" invocations="2" avgMicrosecondsPerInvocation="5888" maxMicrosecondsPerInvocation="8299" standardDeviationMircosecondsPerInvocation="2411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="11" invocations="2" avgMicrosecondsPerInvocation="5846" maxMicrosecondsPerInvocation="7200" standardDeviationMircosecondsPerInvocation="1355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="11" invocations="2" avgMicrosecondsPerInvocation="5819" maxMicrosecondsPerInvocation="9225" standardDeviationMircosecondsPerInvocation="3406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="11" invocations="2" avgMicrosecondsPerInvocation="5657" maxMicrosecondsPerInvocation="9078" standardDeviationMircosecondsPerInvocation="3421"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

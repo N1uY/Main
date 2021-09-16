@@ -1,0 +1,20 @@
+[16157][environment] CWD = /home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main
+[16157][environment] No .inferconfig file found
+[16157][environment] Project root = /home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main
+[16157][environment] INFER_ARGS =   command line arguments:   infer --
+[16157][environment]                                          /home/zss/Documents/jdk1.8.0_201/bin/javac
+[16157][environment]                                          -d
+[16157][environment]                                          /home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main//target/
+[16157][environment]                                          /home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main/src/Main.javaAnalyzer: checkers
+[16157][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[16157][environment] Infer log identifier is 
+Infer version v0.15.0
+[16157][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[16157][environment] 
+[16157][   progress] Capturing in javac mode...
+[16157][      debug] Current working directory: '/home/zss/Documents/opt/data/BugKiller/workspace/user/.default/Main'
+[16157][      debug] Trying to execute: /home/zss/Documents/jdk1.8.0_201/bin/javac '-J-Duser.language=en' '@/tmp/args_.tmp.464ca8' 2>'/tmp/javac.tmp.436bc4.out'
+[16157][   user err] Java model file is required
+[16157][   user err] 
+[16157][      debug] *** Success. Logs:
+[16157][      debug] 
